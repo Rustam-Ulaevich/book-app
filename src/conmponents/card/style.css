@@ -1,0 +1,23 @@
+.card{
+  display: flex;	
+	width: 300px;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid grey;
+	border-radius: 15px;
+}
+
+.card-img{
+	width: 150px;
+	height: 200px;
+}
+
+
+.discription{
+	display: inline;
+	justify-content: flex-end;
+}
+
+.btn{
+	padding: 0 15px;
+}
