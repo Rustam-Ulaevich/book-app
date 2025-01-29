@@ -1,0 +1,26 @@
+.header{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 10vh;
+	padding: 5px;
+	margin: 5px;
+	border: 2px solid rgb(152, 152, 152);
+	border-radius: 20px;
+}
+
+.btn-cards{
+	margin: 20px;
+}
+
+h1{
+	background-image:
+    linear-gradient(250deg,
+      #f33040 0%,
+      #2031f5 50%,
+      #ffffff 100%
+    );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

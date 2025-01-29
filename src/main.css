@@ -1,0 +1,10 @@
+body{
+    font-family: cursive;
+    background-color: rgb(7, 130, 130);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content{
+    display: flex;
+}

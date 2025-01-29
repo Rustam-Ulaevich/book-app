@@ -1,13 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { Cards } from './conmponents/Cards';
+import { Cards } from './conmponents/cards';
+import { Header } from './conmponents/header';
+import { Main } from './conmponents/main';
 
 function App() {
   return (
     <div className="App">
-      <Cards />
+      <Header />
+      <div className='content'>
+        <Cards />
+        <Main />
+      </div>
       
+
     </div>
   );
 }
