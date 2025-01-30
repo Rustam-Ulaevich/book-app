@@ -1,4 +1,6 @@
-.cards{
+.container{
+	/* display: flex; */
+  /* flex-direction: column; */
   width: 350px;
 	min-height: 80vh;
 	padding: 10px;
@@ -7,6 +9,17 @@
 	border-radius: 20px;
 }
 
-.cards__btn{
-	margin-top: 20px;
+.content {
+  flex-grow: 2;
+}
+
+.button {
+	height: 40px;
+	width: 250px;
+	border-radius: 10px;
+
+
+
+	margin: 500px 40px 0;
+  /* align-self: flex-end; */
 }

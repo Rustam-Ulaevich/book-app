@@ -1,5 +1,6 @@
 // import { v1 } from "uuid"
 import { Card } from "../card"
+import { Form } from "../form"
 import './style.css'
 import { useState } from "react"
 
@@ -8,25 +9,47 @@ type CardType = {
   title: string
   status: number
 }
-
-
-export const Cards = () => {
-
-let [arrCard, setArrCard] = useState<Array<CardType>>(
-  [{id: Math.random().toString(), title: 'Преступление и наказание', status: 9 },]
-)
-
-function addCard(){
-  setArrCard([...arrCard, {id: Math.random().toString(), title: 'Новая книга', status: 0 }])
+type PropsType = {
+  click: ()=>void
 }
 
-// сделать card 
+export const Cards = (props: PropsType) => {
 
-  return <div className="cards">
-    
-    {arrCard.map( i => <Card/>)}
+let [arrCard, setArrCard] = useState<Array<CardType>>(
+  [{
+    id: Math.random().toString(), 
+    title: 'Преступление и наказание', 
+    status: 9 
+  },]
+)
 
-    <button className="cards__btn" onClick={() => addCard()}>Добавить книгу!</button>    
+let [showContent, setShowContent] = useState(false)
+  
+  function onClick(){
+    setShowContent(!showContent)
+  }
 
-  </div>
+function addCard(){
+  setArrCard([...arrCard, 
+    {id: Math.random().toString(), title: 'Новая книга', status: 0 }  ])
+
+}
+
+
+  return <div className="container">
+
+      <div className="content">
+
+        { !showContent && arrCard.map( i => <Card click={props.click}/>) }
+
+        { showContent && <Form />}
+
+      </div>
+
+      <button className="button" onClick={() => onClick()}>Добавить книгу!</button>
+
+    </div>
+
+
+   
 }

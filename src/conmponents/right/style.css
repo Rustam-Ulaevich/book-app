@@ -1,0 +1,32 @@
+.main{
+  display: flex;
+  justify-content: flex-start;
+	width: 100%;
+	min-height: 80vh;
+	padding: 30px;
+	margin: 5px;
+	border: 2px solid grey;
+	border-radius: 20px;
+}
+
+.main_img{
+  width: 200px;
+  height: 300px;
+  border: 2px solid grey;
+  border-radius: 20px;
+}
+
+
+.discription{
+  margin-left: 15px;
+  align-items: center;
+}
+
+.main_title {
+	font-size: 24px;
+  margin: 0;
+}
+
+.btn{
+  padding: 0 15px;
+}
